@@ -20,7 +20,7 @@ const RootPage = () => {
         >
           <div className="w-full relative aspect-square">
             <Image
-              src="/images/task_1.png"
+              src="/images/Task_1.png"
               alt="journey"
               fill
               className="object-contain"
@@ -36,7 +36,7 @@ const RootPage = () => {
         >
           <div className="w-full relative aspect-square">
             <Image
-              src="/images/task_2.png"
+              src="/images/Task_2.png"
               alt="task2"
               fill
               className="object-contain"
