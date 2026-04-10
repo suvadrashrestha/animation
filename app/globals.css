@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font: #414141;
 }
 
 @theme inline {
@@ -18,9 +19,43 @@
     --foreground: #ededed;
   }
 }
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+.view-post-btn {
+  display: inline-flex;
+  white-space: nowrap;
+  font-size: 0.75rem; /* text-xs */
+  align-items: center;
+  gap: 0.5rem; /* gap-2 */
+  border-radius: 0.5rem; /* rounded-lg */
+  cursor: pointer;
+  border: 1px solid #1da077; /* initial border */
+  background-color: #1da077;
+  color: white;
+  padding: 0.5rem 1rem; /* p-2 md:px-4 md:py-3 approximate */
+  transition: all 0.1s ease-in; /* duration-100 ease-in */
+}
+
+.view-post-btn:hover {
+  border-color: #1da077;
+  background-color: white;
+  color: #1da077;
+}
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.sideways-text {
+  writing-mode: sideways-lr;
+  word-break: break-word;
+  display: inline-block;
 }
